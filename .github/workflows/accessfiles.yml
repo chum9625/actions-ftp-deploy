@@ -1,5 +1,7 @@
 name: Access files
+
 on: [push]
+
 branches:[ master ]
 
 jobs:
@@ -8,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v1
-     - run: cat sample.txt
+       run: cat sample.txt
