@@ -1,13 +1,13 @@
 name: Access files
 
-on: [push]
-
-branches:[ master ]
+on: push
 
 jobs:
   build:
-    name: Check the contents of the file
+    name: Greeting
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v1
-       run: cat sample.txt
+      - name: Hello World
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: "hoge"
