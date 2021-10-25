@@ -1,6 +1,18 @@
-# github_actions_test
+## secretsで設定する箇所
 
-- It is for testing GitHub Actions.
-- The trigger is push.
+- FTP_SERVER
+- FTP_USERNAME
+- FTP_PASSWORD
 
-[![Hello,world!](https://github.com/chum9625/github_actions_test/actions/workflows/hello.yml/badge.svg)](https://github.com/chum9625/github_actions_test/actions/workflows/hello.yml)
+## 適宜設定する箇所
+
+- LOCAL_DIR
+- REMOTE_DIR
+
+```bash
+  FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          LOCAL_DIR: ./
+          REMOTE_DIR: "/***/***/public_html/***/wp-content/themes/my-theme"
+```
