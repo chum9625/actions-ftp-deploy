@@ -18,7 +18,7 @@
 - LOCAL_DIR
 - REMOTE_DIR
 
-### ftpdeploy.yml 抜粋
+### ftpdeploy.yml 抜粋（WordPressテーマの例）
 
 ```bash
   FTP_SERVER: ${{ secrets.FTP_SERVER }}
