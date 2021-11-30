@@ -1,24 +1,30 @@
-# GitHub ActionsでFTP自動デプロイ
+# 【概要】GitHub Actions FTP自動デプロイ
 
-- 机上のVscodeからdevelopブランチにpush。（通常の開発作業）
-- GitHub上でプルリクし、マージする（アクションが走り、本番サーバーにデプロイ）
+- 更新sauceをdevelopブランチにpush。（通常の開発作業）
+- 公開段階になったらGitHub上でプルリク→マージ（アクションが走り、本番サーバーにデプロイされる）
 
-## 1. ブランチの準備
+## Initial deployment
 
-- developブランチを作成し、デフォルトに設定。
+初回配備の流れ。
+### 1. ブランチの準備（GitHub側：Settings＞Branches）
 
-## 2. Secretsで値を設定
+- developブランチを作成しデフォルトにする。
 
-- FTP_SERVER
-- FTP_USERNAME
-- FTP_PASSWORD
+### 2. Actions secretsの設定（GitHub側：Settings＞Secrets）
 
-## 3. ディレクトリの設定
+- ホスティングサーバー値に設定し追加する。
+  - FTP_SERVER
+  - FTP_USERNAME
+  - FTP_PASSWORD
+
+### 3. ディレクトリの設定（エディター側）
 
 - LOCAL_DIR
 - REMOTE_DIR
 
-### ftpdeploy.yml 抜粋（WordPressテーマの例）
+#### 例（WordPressテーマ）
+
+- ftpdeploy.yml 抜粋
 
 ```bash
   FTP_SERVER: ${{ secrets.FTP_SERVER }}
@@ -28,7 +34,10 @@
           REMOTE_DIR: "/***/***/public_html/***/wp-content/themes/my-theme"
 ```
 
-## 4. Pull Requests の実行
+### 4. Pull Requests の実行（GitHub側：Pull requests＞New pull request）
 
-- developブランチからmainブランチへプルリクする
-- 自分でマージする
+- developブランチからmainブランチへプルリクし、マージする。
+
+## Regular update work
+
+- 公開段階で手順4を実施。
