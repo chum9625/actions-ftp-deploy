@@ -1,4 +1,4 @@
-# GitHub Actions FTP自動デプロイ
+# Actions FTP自動デプロイ
 
 1. 更新sauceをdevelopブランチにpush。（通常の開発作業）
 2. 公開段階になったらGitHub上でプルリク→マージ（アクションが走り、本番サーバーにデプロイされる）
@@ -6,13 +6,14 @@
 ## Initial deployment
 
 初回配備の流れ。
+
 ### 1. ブランチの準備（GitHub側：Settings＞Branches）
 
 - developブランチを作成しデフォルトにする。
 
 ### 2. Actions secretsの設定（GitHub側：Settings＞Secrets）
 
-- ホスティングサーバー値に設定し追加する。
+- ホスティングサーバー値を設定＆追加。
   - FTP_SERVER
   - FTP_USERNAME
   - FTP_PASSWORD
