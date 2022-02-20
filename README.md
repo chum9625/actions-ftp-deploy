@@ -1,6 +1,6 @@
 # Actions FTP自動デプロイ
 
-1. 更新sauceをdevelopブランチにpush。（通常の開発作業）
+1. 更新したsourceをdevelopブランチにpush。（通常の開発作業）
 2. 公開段階になったらGitHub上でプルリク→マージ（アクションが走り、本番サーバーにデプロイされる）
 
 ## Initial deployment
