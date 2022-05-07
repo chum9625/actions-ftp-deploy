@@ -10,11 +10,12 @@
 
 初回配備の流れ。
 
-### 1. ブランチの準備（👆上部セレクター）
+### 1. ブランチの準備
 
-- developブランチを作成しデフォルトにする。
+- developブランチを作成（👆上部セレクター）
+- [デフォルト設定はこちら]()
 
-### 2. Actions secretsの設定（GitHub側：Settings＞Secrets）
+### 2. [Actions secretsの設定](https://github.com/chum9625/actions-ftp-deploy/settings/secrets/actions)
 
 - ホスティングサーバー値を設定＆追加。
   - FTP_SERVER
