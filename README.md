@@ -1,14 +1,14 @@
 # Actions FTP自動デプロイ
 
+## おおまかな流れ
+
 1. 更新したsourceをdevelopブランチにpush。（通常の開発作業）
 2. 公開段階になったらGitHub上でプルリク
 3. マージ
 4. アクションが走る（4分弱？かかる）
 5. 本番サーバーデプロイ完了
 
-## Initial deployment
-
-初回配備の流れ。
+## Initial deployment（初回手順）
 
 ### 1. ブランチの準備
 
