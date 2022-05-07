@@ -12,8 +12,8 @@
 
 ### 1. ブランチの準備
 
-- developブランチを作成（👆上部セレクター）
-- [デフォルト設定はこちら]()
+- developブランチを作成（👆新規作成は上部セレクターで実施）
+- [デフォルト設定はこちら](https://github.com/chum9625/actions-ftp-deploy/settings/branches)
 
 ### 2. [Actions secretsの設定](https://github.com/chum9625/actions-ftp-deploy/settings/secrets/actions)
 
@@ -22,7 +22,7 @@
   - FTP_USERNAME
   - FTP_PASSWORD
 
-### 3. ディレクトリの設定（エディター側）
+### 3. ディレクトリ設定（ftpdeploy.yml）
 
 - LOCAL_DIR
 - REMOTE_DIR
