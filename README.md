@@ -39,9 +39,10 @@
           REMOTE_DIR: "/***/***/public_html/***/wp-content/themes/my-theme"
 ```
 
-### 4. Pull Requests の実行（GitHub側：Pull requests＞New pull request）
+### 4. Pull Requests の実行
 
-- developブランチからmainブランチへプルリクし、マージする。
+- developブランチからmainブランチへ[プルリク](https://github.com/chum9625/actions-ftp-deploy/pulls)
+- マージ
 
 ## Regular update work
 
