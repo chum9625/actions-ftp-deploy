@@ -13,7 +13,7 @@
 ### 1. ブランチの準備
 
 - developブランチを作成（👆新規作成は上部セレクターで実施）
-- [デフォルト設定はこちら](https://github.com/chum9625/actions-ftp-deploy/settings/branches)
+- [デフォルト設定はリポジトリのSettingsで行う](https://github.com/chum9625/actions-ftp-deploy/settings/branches)
 
 ### 2. [Actions secretsの設定](https://github.com/chum9625/actions-ftp-deploy/settings/secrets/actions)
 
