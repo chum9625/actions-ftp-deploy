@@ -41,8 +41,8 @@
 
 ### 4. Pull Requests の実行
 
-- developブランチからmainブランチへ[プルリク](https://github.com/chum9625/actions-ftp-deploy/pulls)
-- マージ
+1. developブランチからmainブランチへ[プルリク](https://github.com/chum9625/actions-ftp-deploy/pulls)
+2. マージ
 
 ## Regular update work
 
