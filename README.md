@@ -27,24 +27,16 @@
   - FTP_SERVER
   - FTP_USERNAME
   - FTP_PASSWORD
+  - FTP_SERVER_DIR 
 
-### 3. ディレクトリ設定（ftpdeploy.yml）
+### 3. 最新版 main.yml を使うこと
 
-- LOCAL_DIR
-- REMOTE_DIR
+- 2022/6/13 実行テスト済み
+- 除外ファイルがうまく機能していないようだ
 
-#### 例（WordPressテーマ）
+#### 例）WordPressテーマ開発
 
 - localはテーマディレクトリルートでgit init
-- 以下 ftpdeploy.yml 抜粋
-
-```bash
-  FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          LOCAL_DIR: ./
-          REMOTE_DIR: "/***/***/public_html/***/wp-content/themes/my-theme"
-```
 
 ### 4. Pull Requests の実行
 
