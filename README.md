@@ -1,8 +1,12 @@
 # Actions FTP自動デプロイ
 
+更新作業を効率的にする。
+
+## Flow
+
 1. 更新sourceをdevelopブランチにpush。（通常の開発作業）
 2. 公開段階になったらGitHub上でプルリク
-3. マージ
+3. mainにマージ
 4. アクションが走る（4分弱？かかる）
 5. 本番サーバーデプロイ完了
 
@@ -29,7 +33,8 @@
 
 #### 例（WordPressテーマ）
 
-- ftpdeploy.yml 抜粋
+- localはテーマディレクトリルートでgit init
+- 以下 ftpdeploy.yml 抜粋
 
 ```bash
   FTP_SERVER: ${{ secrets.FTP_SERVER }}
