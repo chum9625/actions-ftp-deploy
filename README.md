@@ -4,22 +4,20 @@
 
 Webサイトのデプロイを自動化するGitHub Action。
 
-## Flow
+## 🌱 Flow
 
 1. 更新sourceをdevelopブランチにpush。（通常の開発作業）
 2. 公開段階になったらGitHub上でプルリク
 3. mainにマージ
-4. アクションが走る（4分弱？かかる）
-5. 本番サーバーデプロイ完了
+4. アクションが走る
+5. 本番サーバーデプロイ完了（所要時間10数秒くらい）
 
-## 🌱 Initial deployment
-
-👇 初回手順
+## ⚙ 初回Setting
 
 ### 1. ブランチの準備
 
-- developブランチを作成（👆新規作成は上部セレクターで実施）
-- [デフォルト設定はリポジトリのSettingsで行う](https://github.com/chum9625/actions-ftp-deploy/settings/branches)
+- developブランチを作成
+- [developブランチをデフォルトに設定する](https://github.com/chum9625/actions-ftp-deploy/settings/branches)
 
 ### 2. [Actions secretsの設定](https://github.com/chum9625/actions-ftp-deploy/settings/secrets/actions)
 
@@ -28,21 +26,17 @@ Webサイトのデプロイを自動化するGitHub Action。
   - FTP_USERNAME
   - FTP_PASSWORD
   - FTP_SERVER_DIR 
+- **最新版 main.yml を使うこと**
 
-### 3. 最新版 main.yml を使うこと
-
-- 2022/6/13 実行テスト済み
-- ~除外ファイルがうまく機能していないようだ~ 🆗 2022/6/14 確認済
-
-#### 例）WordPressテーマ開発
-
-- localはテーマディレクトリルートでgit init
-
-### 4. Pull Requests の実行
+## 🆙 Regular work
+ 
+### Pull Requests の実行
 
 1. developブランチからmainブランチへ[プルリク](https://github.com/chum9625/actions-ftp-deploy/pulls)
-2. マージ
+2. マージを実行
 
-## 🌼 Regular update work
+---
 
-👆 公開段階で**手順4**を実施。
+## WordPressテーマ開発のルートディレクトリ
+
+- テーマディレクトリのルートで `git init` 
