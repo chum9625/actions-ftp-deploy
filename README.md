@@ -2,15 +2,15 @@
 
 # 概要
 
-Webサイトのデプロイを自動化する GitHub Action のひな形。
+FTPデプロイを自動化する GitHub Action のひな形。
 
 ## 🌱 Flow
 
-1. 更新sourceをdevelopブランチにpush。（通常の開発作業）
-2. 公開段階になったらGitHub上でプルリク
+1. 通常の開発作業はdevelopブランチで行う
+2. 公開段階になったらGitHub上でmainブランチにプルリク
 3. mainにマージ
-4. アクションが走る
-5. 本番サーバーデプロイ完了（所要時間10数秒くらい）
+4. アクション実行
+5. 本番サーバーにデプロイ完了（所要時間10数秒くらい）
 
 ## ⚙ 初回Setting
 
@@ -26,7 +26,8 @@ Webサイトのデプロイを自動化する GitHub Action のひな形。
   - FTP_USERNAME
   - FTP_PASSWORD
   - FTP_SERVER_DIR 
-- **最新版 main.yml を使うこと**
+- **アクションのVerを都度確認**
+- SERVER_DIRの設定値で、フォルダ末尾のスラッシュは必須
 
 ## 🆙 Regular work
  
